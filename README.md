@@ -1,107 +1,167 @@
-# Hospital System Network Design
+# 🏥 Hospital Network Design
 
-## Table of Contents
-1. [Abstract](#abstract)
-2. [Introduction](#introduction)
-3. [Problem Statement](#problem-statement)
-4. [Project Goal](#project-goal)
-5. [Proposed Methodology](#proposed-methodology)
-6. [Project Milestones](#project-milestones)
-7. [Expected Outcome](#expected-outcome)
-8. [Conclusion](#conclusion)
+A secure, scalable, and cost-effective hospital network infrastructure designed for **Melbourne Health Services** using **Cisco Packet Tracer**.
 
----
+The project focuses on reliable communication between hospital departments through hierarchical network architecture, VLAN segmentation, dynamic routing, IP address management, and network security.
 
-## Abstract
-In response to the evolving healthcare landscape, this project aims to design and implement a robust network infrastructure for Melbourne Health Services using Cisco Packet Tracer. The focus is on enhancing security, operational efficiency, and cost-effectiveness.
+## 📑 Table of Contents
 
----
+- [Project Overview](#-project-overview)
+- [Problem Statement](#-problem-statement)
+- [Project Objectives](#-project-objectives)
+- [Network Design and Methodology](#-network-design-and-methodology)
+- [Key Features](#-key-features)
+- [Repository Contents](#-repository-contents)
+- [Tools and Technologies](#-tools-and-technologies)
+- [Implementation and Testing](#-implementation-and-testing)
+- [Expected Outcomes](#-expected-outcomes)
+- [Getting Started](#-getting-started)
+- [Contributing](#-contributing)
+- [Contact](#-contact)
 
-## Introduction
-Melbourne Health Services operates across multiple locations, necessitating a secure and efficient network infrastructure. The project proposes the design and implementation of a hierarchical network model using Cisco Packet Tracer to meet these needs.
+## 📌 Project Overview
 
----
+Melbourne Health Services operates across multiple locations and requires a reliable network infrastructure to support secure communication and efficient data exchange.
 
-## Problem Statement
-Current reliance on third-party IT services poses challenges related to cost efficiency and data security. Internalizing network infrastructure control is crucial for ensuring data confidentiality, integrity, and availability.
+This project proposes a hierarchical network design implemented in Cisco Packet Tracer. It combines network segmentation, dynamic routing, IP address management, and security configurations to improve reliability, scalability, and operational efficiency.
 
----
+## ❗ Problem Statement
 
-## Project Goal
-To establish a resilient and cost-effective network infrastructure for Melbourne Health Services through the deployment of a hierarchical network model using Cisco Packet Tracer.
+Dependence on third-party IT services can introduce challenges related to cost, network administration, and data security. A well-structured network infrastructure can improve internal control, support secure communication, and provide a foundation for future expansion.
 
----
+## 🎯 Project Objectives
 
-## Proposed Methodology
-### Hierarchical Network Design:
-- Utilize Core Routers, Multilayer Switches, and Access Switches.
-- Implement redundancy strategies for enhanced reliability.
+- Design a hierarchical hospital network topology.
+- Organize departmental traffic using VLANs and subnetting.
+- Configure dynamic routing with OSPF.
+- Automate IP address allocation through DHCP.
+- Improve network security using ACLs and port security.
+- Explore VPN-based secure communication.
+- Test connectivity and validate network configurations.
 
-### VLANs and Subnetting:
-- Allocate VLANs and subnets for departmental segregation.
-- Apply VLAN configurations for secure traffic management.
+## 🖧 Network Design and Methodology
 
-### Security Measures:
-- Configure Access Control Lists (ACLs) for user access control.
-- Implement Virtual Private Network (VPN) solutions for secure communication.
-- Enforce port-security measures to restrict unauthorized access.
+### 1. Hierarchical Network Architecture
 
-### Routing Protocol (OSPF):
-- Deploy OSPF for dynamic routing and efficient data transmission.
+The proposed topology uses a layered architecture consisting of:
 
-### DHCP Configuration:
-- Set up DHCP servers for IP address management.
-- Allocate static IPs for stability within the network.
+- **Core Routers:** Support communication between network segments.
+- **Multilayer Switches:** Enable inter-VLAN routing and traffic management.
+- **Access Switches:** Connect end devices to the network.
+- **End Devices:** Represent hospital users and departmental systems.
 
-### Monitoring and Testing:
-- Integrate network monitoring tools for performance optimization.
-- Conduct comprehensive testing to validate network functionality.
+### 2. VLANs and Subnetting
 
----
+Departmental segmentation helps organize network traffic, manage IP address ranges, and limit unnecessary communication between network segments.
 
-## Project Milestones
-1. **Network Design and Topology Implementation**
-   - Develop a detailed network topology.
-   - Configure Core Routers, Multilayer Switches, and Access Switches.
+### 3. Network Security
 
-2. **VLANs and Subnetting Configuration**
-   - Plan VLAN allocation and implement configurations.
+Planned security measures include:
 
-3. **Security Measures Implementation**
-   - Configure ACLs, VPN solutions, and port-security measures.
+- Access Control Lists (ACLs) for traffic filtering.
+- Port security to restrict unauthorized device connections.
+- VPN solutions for secure communication where configured.
 
-4. **Routing Protocol Configuration (OSPF)**
-   - Deploy OSPF and ensure route advertisement.
+### 4. Dynamic Routing with OSPF
 
-5. **DHCP Server Setup and Testing**
-   - Establish DHCP servers and validate IP allocation.
+Open Shortest Path First (OSPF) is used to support dynamic route discovery and exchange between participating routers.
 
-6. **Network Monitoring Tool Implementation**
-   - Deploy monitoring tools for real-time performance tracking.
+### 5. DHCP and IP Address Management
 
----
+DHCP provides automatic IP address allocation to client devices, while static addressing can be used for selected infrastructure devices that require stable addresses.
 
-## Expected Outcome
-- Enhanced security with improved data confidentiality, integrity, and availability.
-- Cost-efficiency through reduced dependency on external IT services.
-- Operational efficiency with streamlined communication and dynamic IP allocation.
-- Increased reliability with a resilient hierarchical network design.
+### 6. Monitoring and Testing
 
----
+Connectivity and configuration testing help identify routing issues, verify IP allocation, and evaluate communication between network segments.
 
-## Conclusion
-The proposed network redesign for Melbourne Health Services aims to enhance security, operational efficiency, and cost-effectiveness. By implementing a hierarchical network model using Cisco Packet Tracer, the project ensures scalability, reliability, and adherence to industry standards.
+## ✨ Key Features
 
----
+- Hierarchical network topology
+- Departmental VLAN segmentation
+- IP addressing and subnet planning
+- OSPF dynamic routing
+- DHCP configuration
+- ACL-based traffic control
+- Port-security configuration
+- Redundancy planning
+- Network connectivity testing
 
-## Contributing
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
+*Note: Features described as planned or proposed should be considered implemented only where supported by the included Packet Tracer project and configuration files.*
 
-## Contact
-For any questions or suggestions, please contact [usmanazulfiqar2001@gmail.com](mailto:usmanazulfiqar2001@gmail.com).
+## 📂 Repository Contents
 
+| File | Description |
+|---|---|
+| `hospital_network_system_main.pkt` | Cisco Packet Tracer network project |
+| `IP ADDRESS.pdf` | IP addressing documentation |
+| `configuration(copy_paste_in_project).txt` | Network configuration commands |
+| `hospital network system_proposal.pdf` | Project proposal |
+| `hospital requirements(case_study).pdf` | Hospital network case study and requirements |
+| `Hospital Network System presentation.pptx` | Project presentation |
+| `screenshot of configuration.pptx` | Configuration screenshots and documentation |
 
+## 🛠️ Tools and Technologies
+
+- **Cisco Packet Tracer** — Network topology design and simulation
+- **OSPF** — Dynamic routing
+- **VLANs and Subnetting** — Network segmentation and addressing
+- **DHCP** — Automatic IP address allocation
+- **ACLs and Port Security** — Network access control
+- **VPN** — Proposed secure communication between locations
+
+## 🧪 Implementation and Testing
+
+The project workflow includes:
+
+1. Design the network topology in Cisco Packet Tracer.
+2. Configure routers, multilayer switches, and access switches.
+3. Assign VLANs and IP address ranges.
+4. Configure OSPF routing and DHCP services.
+5. Apply the required security configurations.
+6. Test device connectivity and routing between network segments.
+7. Review the results and document configuration details.
+
+## 📈 Expected Outcomes
+
+- Improved network organization and traffic management.
+- More controlled access to network resources.
+- Efficient IP address allocation.
+- Reliable communication between participating network segments.
+- A scalable foundation for future hospital network expansion.
+- Reduced dependence on external network administration for routine tasks.
+
+## 🚀 Getting Started
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/usmana0820/Hospital-Network-Design.git
+   ```
+
+2. Open `hospital_network_system_main.pkt` in Cisco Packet Tracer.
+3. Review the network topology and IP addressing documentation.
+4. Inspect the configuration commands provided in the repository.
+5. Run connectivity tests and verify the configurations supported by the project.
+
+**Requirements:** A compatible installation of Cisco Packet Tracer.
+
+## 🤝 Contributing
+
+Contributions and suggestions are welcome.
+
+1. Fork this repository.
+2. Create a feature branch: `git checkout -b feature-branch`
+3. Commit your changes: `git commit -m "Describe your changes"`
+4. Push your branch: `git push origin feature-branch`
+5. Open a pull request.
+
+## 👩‍💻 Author
+
+**Usmana Zulfiqar**
+
+- GitHub: [@usmana0820](https://github.com/usmana0820)
+- Email: [usmanazulfiqar20@gmail.com](mailto:usmanazulfiqar20@gmail.com)
+
+## 📄 License
+
+No license is specified in the repository information provided. Add a `LICENSE` file if you intend to publish the project under an open-source license.
